@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Universe</title>
+  <link rel="stylesheet" href="css/secondd.css" />
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      color: #FFD700;
+    }
+
+    p, ul, li {
+      margin: 0 20px 20px;
+    }
+
+    /* Section Styling */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 20px;
+    }
+
+    /* Dark Theme Image Styling */
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(255, 215, 0, 0.8);
+      animation: pop 0.5s ease-out; /* Pop effect on hover */
+    }
+
+    /* Button Styling */
+    button {
+      background-color: #FFD700;
+      color: #121212;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #FFC107;
+      animation: pop 0.5s ease-out; /* Add pop animation to the button on hover */
+    }
+
+    /* Pop animation */
+    @keyframes pop {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2); /* Scale up the element */
+      }
+      100% {
+        transform: scale(1); /* Return to the original size */
+      }
+    }
+
+    /* Hidden Content Styling */
+    #additionalContent {
+      background-color: #1e1e1e;
+      color: #FFD700;
+      border: 1px solid #FFD700;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    /* List Styling */
+    ul {
+      list-style-type: square;
+      padding-left: 40px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      .image-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-container img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>The Universe</h1>
+
+    <!-- Neutron Star Section -->
+    <section>
+      <h3>Neutron Star</h3>
+      <img src="/Users/sahilgupta/Desktop/html.java.python/image/neutron star.jpg" alt="Neutron Star Image" />
+      <p>A neutron star is the incredibly dense, compact remnant of a massive star that has undergone a supernova explosion. It is one of the most extreme and fascinating objects in the universe.</p>
+      <button class="toggle-content" data-target="neutron-details">Show More</button>
+      <div id="neutron-details" class="hidden-content">
+        <h3>Formation</h3>
+        <ul>
+          <li>Massive Star Collapse: Neutron stars form from the core of a star that started its life with a mass between 8 to 25 times the mass of the Sun.</li>
+          <li>When the star exhausts its nuclear fuel, it can no longer support itself against gravity. The outer layers collapse and rebound in a supernova explosion, leaving behind the dense core.</li>
+          <li>If the core's mass is between about 1.4 and 3 solar masses, it compresses into a neutron star. If the mass exceeds this limit, it will form a black hole.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Black Hole Section -->
+    <section>
+      <h3>Black Hole</h3>
+      <img src="/Users/sahilgupta/Desktop/html.java.python/image/Screenshot 2024-12-15 at 5.14.21 PM.png" alt="Black Hole Image" />
+      <p>A black hole is a region of spacetime where gravity is so intense that nothing—not even light—can escape. They are among the most fascinating phenomena in the universe.</p>
+      <button class="toggle-content" data-target="blackhole-details">Show More</button>
+      <div id="blackhole-details" class="hidden-content">
+        <h3>Formation</h3>
+        <ul>
+          <li>Stellar Collapse: A massive star (>25x Sun's mass) collapses into a stellar black hole.</li>
+          <li>Mergers: Collisions between neutron stars or black holes can form larger black holes.</li>
+          <li>Primordial Black Holes: Hypothetical black holes formed in the early universe.</li>
+        </ul>
+        <h3>Key Features</h3>
+        <ul>
+          <li>Event Horizon: The "point of no return" where nothing escapes.</li>
+          <li>Singularity: The center where gravity is infinitely strong.</li>
+          <li>Accretion Disk: A disk of gas and dust heated by gravitational forces.</li>
+          <li>Relativistic Jets: High-energy particle jets emitted along the axis of rotation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="sahil.html">Last Page</a>
+      <a href="fether.html">Next Page</a>
+    </nav>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="/Users/sahilgupta/Desktop/website/second.js"></script>
+</body>
+</html>

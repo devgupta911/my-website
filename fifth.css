@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #000000;  /* Black background */
+    color: #f9ed03;  /* Yellow text */
+}
+
+h1, h2 {
+    color: #f6ff00;  /* Slightly lighter yellow for headings */
+    text-align: center;
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border: 4px solid #f9ed03;  /* Yellow border around images */
+    border-radius: 10px;  /* Rounded corners for the border */
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover Effect for Images */
+img:hover {
+    filter: brightness(1.1);
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Links */
+a {
+    display: inline-block;
+    margin: 15px 5px;
+    text-decoration: none;
+    color: #00aaff;  /* Blue color for links */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #00ccff;  /* Light blue on hover */
+    background-color: #333;  /* Dark background on hover */
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+
+/* Page Sections */
+h2 {
+    border-bottom: 2px solid #444;  /* Dark border for section titles */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin: 15px 0;
+    padding: 0;
+}
+
+li {
+    margin: 8px 0;
+}
+
+/* Layout Enhancements */
+p {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+/* Code for Small Screens */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    img {
+        max-width: 90%;
+    }
+}

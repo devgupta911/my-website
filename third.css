@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+  }
+  
+  /* Headings */
+  h1,
+  h2,
+  h3 {
+    color: #ffd700; /* Gold color for headings */
+    text-align: center;
+  }
+  
+  /* Lists */
+  ul {
+    margin-left: 20px;
+    list-style: none; /* Removes default list style */
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  ul li::before {
+    content: "•"; /* Adds a bullet */
+    position: absolute;
+    left: 0;
+    color: #ffd700; /* Gold bullet */
+  }
+  
+  /* Paragraphs */
+  p {
+    margin-top: 10px;
+  }
+  
+  /* Links */
+  a {
+    color: #ffd700; /* Gold for links */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Images */
+  img {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(255, 215, 0, 0.8); /* Highlighted shadow */
+  }
+  
+  /* Sections */
+  .section {
+    margin-bottom: 30px;
+    border: 1px solid #ffd700; /* Gold border */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #1e1e1e; /* Slightly lighter dark background */
+  }
+  
+  /* Navigation Buttons */
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .navigation a {
+    background-color: #ffd700; /* Gold background */
+    color: #121212; /* Dark text */
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .navigation a:hover {
+    background-color: #ffc107; /* Lighter gold on hover */
+    color: #000; /* Black text on hover */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  
+    img {
+      width: 90%; /* Make images responsive */
+    }
+  }

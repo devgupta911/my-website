@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exoplanets Information</title>
+    <link rel="stylesheet" href="css/third.css">
+    <style>
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        background-color: #121212;
+        color: #ffffff;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #ffd700;
+        text-align: center;
+      }
+
+      ul {
+        margin-left: 20px;
+        list-style: none;
+        padding-left: 20px;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      ul li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #ffd700;
+      }
+
+      p {
+        margin-top: 10px;
+      }
+
+      a {
+        color: #ffd700;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        display: block;
+        margin: 20px auto;
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 16px rgba(255, 215, 0, 0.8);
+      }
+
+      .section {
+        margin-bottom: 30px;
+        border: 1px solid #ffd700;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #1e1e1e;
+      }
+
+      /* Buttons for navigation */
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+      }
+
+      .navigation a {
+        background-color: #ffd700;
+        color: #121212;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      .navigation a:hover {
+        background-color: #ffc107;
+        color: #000;
+      }
+
+      /* Responsive Design */
+      @media screen and (max-width: 768px) {
+        body {
+          padding: 10px;
+        }
+
+        img {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exoplanets Information</h1>
+
+    <div class="section">
+      <h2>What Are Exoplanets?</h2>
+      <p>
+        Exoplanets are planets that orbit stars outside our solar system. Since
+        the first discovery in 1992, thousands have been identified, with many
+        more awaiting confirmation. They vary widely in size, composition, and
+        orbital characteristics.
+      </p>
+      <p>Photo of Exoplanet:</p>
+      <img
+        src="/Users/sahilgupta/Desktop/html.java.python/exoplanet/exoplanet.jpg"
+        alt="Exoplanet"
+      />
+    </div>
+
+    <div class="section">
+      <h2>Types of Exoplanets</h2>
+      <ul>
+        <li>
+          <strong>Gas Giants</strong>: Similar to Jupiter and Saturn but can be
+          much larger. Examples: WASP-12b, HD 209458b.
+        </li>
+        <p>Photo of Gas Giants:</p>
+        <img
+          src="/Users/sahilgupta/Desktop/html.java.python/exoplanet/gas giant.jpg"
+          alt="Gas Giant"
+        />
+        <li>
+          <strong>Neptune-like</strong>: Similar in size to Neptune or Uranus.
+          Examples: GJ 1214b.
+        </li>
+        <p>Photo of Neptune-like Planet:</p>
+        <img
+          src="/Users/sahilgupta/Desktop/html.java.python/exoplanet/neptune-like.jpg"
+          alt="Neptune-like"
+        />
+        <li>
+          <strong>Rocky Planets (Earth-like)</strong>: Examples: Proxima
+          Centauri b, Kepler-452b.
+        </li>
+        <p>Photo of Rocky Planet:</p>
+        <img
+          src="/Users/sahilgupta/Desktop/html.java.python/exoplanet/rocky planets.jpg"
+          alt="Rocky Planet"
+        />
+        <li>
+          <strong>Super-Earths</strong>: Examples: 55 Cancri e, Gliese 581c.
+        </li>
+        <p>Photo of Super-Earths:</p>
+        <img
+          src="/Users/sahilgupta/Desktop/html.java.python/exoplanet/super earth.jpg"
+          alt="Super-Earth"
+        />
+        <li>
+          <strong>Rogue Planets</strong>: Example: PSO J318.5-22.
+        </li>
+        <p>Photo of Rogue Planet:</p>
+        <img
+          src="/Users/sahilgupta/Desktop/html.java.python/exoplanet/rouge planet.jpg"
+          alt="Rogue Planet"
+        />
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Characteristics of Exoplanet Types</h2>
+      <ul>
+        <li><strong>Gas Giants</strong>: Composed of hydrogen and helium.</li>
+        <li><strong>Neptune-like</strong>: Often icy with thick atmospheres.</li>
+        <li>
+          <strong>Rocky Planets</strong>: Found in a star's habitable zone.
+        </li>
+        <li><strong>Super-Earths</strong>: Can vary widely in composition.</li>
+        <li>
+          <strong>Rogue Planets</strong>: Travel through interstellar space.
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>How Do We Detect Exoplanets?</h2>
+      <ul>
+        <li><strong>Transit Method</strong>: Observes a star's brightness.</li>
+        <li>
+          <strong>Radial Velocity (Doppler Shift)</strong>: Detects a star’s
+          wobble.
+        </li>
+        <li>
+          <strong>Direct Imaging</strong>: Captures pictures of planets.
+        </li>
+        <li>
+          <strong>Microlensing</strong>: Relies on gravitational bending of
+          light.
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Interesting Exoplanets</h2>
+      <ul>
+        <li>
+          <strong>Kepler-22b</strong>: A super-Earth in the habitable zone.
+        </li>
+        <li>
+          <strong>TRAPPIST-1 System</strong>: Seven Earth-sized planets.
+        </li>
+        <li>
+          <strong>TOI-700d</strong>: Earth-like planet in a habitable zone.
+        </li>
+      </ul>
+    </div>
+
+    <div class="navigation">
+      <a href="/Users/sahilgupta/Desktop/website/Gupta.html">Last Page</a>
+      <a href="makeminecartsfaster.html">Next Page</a>
+    </div>
+    <script src="/Users/sahilgupta/Desktop/website/third.js"></script>
+  </body>
+</html>
